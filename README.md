@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+Blog CRUD Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for a Blog CRUD platform built using Vite, React (TypeScript), and Tailwind CSS. It allows users to register, log in, and manage blog posts (create, update, delete). The frontend communicates with the backend API using Axios and handles global state using Redux Toolkit with Redux Persist for state persistence. Form handling is managed by Formik with Yup for validation.
 
-Currently, two official plugins are available:
+Technologies Used
+Vite (React with TypeScript)
+Tailwind CSS (for styling)
+Axios (for HTTP requests)
+Redux Toolkit (for state management)
+Redux Persist (for state persistence)
+Formik & Yup (for form handling and validation)
+AWS (for hosting)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Prerequisites
+Before running the frontend locally, ensure you have the following installed on your machine:
 
-## Expanding the ESLint configuration
+Node.js (v14.x or higher)
+npm (v6.x or higher)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+Here's a detailed README.md for the frontend of your Blog CRUD platform, including instructions for setting it up locally and accessing the deployed version:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Blog CRUD Platform - Frontend
+This is the frontend for a Blog CRUD platform built using Vite, React (TypeScript), and Tailwind CSS. It allows users to register, log in, and manage blog posts (create, update, delete). The frontend communicates with the backend API using Axios and handles global state using Redux Toolkit with Redux Persist for state persistence. Form handling is managed by Formik with Yup for validation.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Features
+User Authentication: Users can register, log in, and stay logged in across sessions using Redux Persist.
+Blog Management (CRUD): Users can create, read, update, and delete their blog posts.
+Responsive Design: The frontend is built with Tailwind CSS, ensuring it works well on all devices.
+Form Validation: Forms are managed using Formik with Yup for validation.
+Technologies Used
+Vite (React with TypeScript)
+Tailwind CSS (for styling)
+Axios (for HTTP requests)
+Redux Toolkit (for state management)
+Redux Persist (for state persistence)
+Formik & Yup (for form handling and validation)
+AWS (for hosting)
+Prerequisites
+Before running the frontend locally, ensure you have the following installed on your machine:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Node.js (v14.x or higher)
+npm (v6.x or higher)
+Getting Started (Local Setup)
+Follow these instructions to set up the frontend application locally.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository
+git clone <repository-url>
+cd frontend
+2. Install Dependencies
+npm install
+3. Set Up Environment Variables
+Create a .env file in the root directory and add the necessary variables.
+4. Start the Development Server
+Once you've configured your environment variables, start the development server:
+npm run dev
+
+Deployed Version
+The frontend is deployed and hosted on AWS. You can access the deployed version via the following URL:
+
+https://blogger.ananthuks.online
+
+Deployment Instructions
+To deploy the frontend on AWS:
+
+Build the frontend:
+npm run build
+This will create a production-ready build in the dist/ directory.
+
+Contact
+For any queries or issues, please contact:
+
+Email: ananthudev224@gmail.com
