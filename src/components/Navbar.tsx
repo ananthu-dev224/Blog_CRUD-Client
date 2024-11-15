@@ -39,7 +39,6 @@ const Navbar: FC = () => {
     <nav className="flex justify-between items-center bg-gray-200 p-4 m-2 rounded-md text-gray-700">
       {/* Blogger Logo */}
       <div className="text-2xl font-bold text-gray-800">Blogger.online</div>
-
       {/* Create Icon and User Info */}
       <div className="flex items-center space-x-4">
         {/* Create Icon */}

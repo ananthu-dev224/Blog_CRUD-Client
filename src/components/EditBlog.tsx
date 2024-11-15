@@ -1,16 +1,8 @@
 import { FC, useState, ChangeEvent } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { EditBlogFormProps } from '../types/interfaces';
 
-interface EditBlogFormProps {
-  blogData: {
-    title: string;
-    description: string;
-    imageUrl: string;
-  };
-  onClose: () => void;
-  onSubmit: (values: { title: string, description: string, image: File | null }) => void;
-}
 
 const validationSchema = Yup.object({
   title: Yup.string()

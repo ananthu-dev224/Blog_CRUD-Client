@@ -5,16 +5,8 @@ import { useDispatch } from "react-redux";
 import { updateBlog, deleteBlog } from "../services/blog";
 import { confirmAlert } from "react-confirm-alert";
 import { toast } from "sonner";
+import { BlogCardProps } from "../types/interfaces";
 
-interface BlogCardProps {
-  userName: string;
-  title: string;
-  imageUrl: string;
-  content: string;
-  blogId: string;
-  onUpdate?: any;
-  isAuthor?: boolean;
-}
 
 const BlogCard: FC<BlogCardProps> = ({
   userName,
